@@ -7,8 +7,8 @@ $(document).ready(function() {
 
       for (var index = countBy; index <= countTo;  index += countBy) {
         // alert(index);
-       $("#output").text(displayNumbers);
         displayNumbers.push(index);
+        $("#output").text(displayNumbers);
       };
   });
 });
