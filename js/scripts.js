@@ -3,13 +3,12 @@ $(document).ready(function() {
     event.preventDefault();
     var countTo = parseInt($("#count-to").val());
     var countBy = parseInt($("#count-by").val());
-    //var displayNumbers= []
+    var displayNumbers= []
 
-      for (var index = 0; index <= countTo;  index += countBy) {
-        alert(index);
-        
-        //console.log(displayNumbers);
-      
+      for (var index = countBy; index <= countTo;  index += countBy) {
+        // alert(index);
+       $("#output").text(displayNumbers);
+        displayNumbers.push(index);
       };
   });
 });
